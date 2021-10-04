@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title>Bài học HTML</title>
+		<meta charset='uft-8'
+	</head>
+	<body>
+		<form method = get action = ''>
+		<table>
+			<caption><h1 align = left><font color = "blue">Đăng ký tài khoản</font></h1><hr></caption>
+			<tr>
+				<th align = center width = 150>Họ Tên(*)</th>
+				<td width = 200><input type = 'text' placeholder = 'Họ Tên' name = 'txtFullName'></td>
+			</tr>
+			<tr>
+				<th align = center width = 150>Email(*)</th>
+				<td width = 200><input type = 'text' placeholder = 'Email' name = 'txtMail'></td>
+				</td>
+			</tr>
+			<tr>
+				<th align = center>Điện Thoại</th>
+				<td width = 200><input type = 'text' placeholder = 'Điện Thoại' name = 'txtPhone'></td>
+				</td>
+			</tr>
+			<tr>
+				<th align = center width = 150>Tỉnh Thành</th>
+				<td width = 200>
+				<input type = 'text' placeholder = 'Lựa chọn' list = 'Cities'  name = 'txtHomeTown'>
+				<datalist id = 'Cities'>
+					<option value = 'Hà Nôi'></option>
+					<option value = 'Hà Nam'></option>
+					<option value = 'Thái Nguyên'></option>
+					<option value = 'Thái Bình'></option>
+					<option value = 'Ninh Bình'></option>
+					<option value = 'Vĩnh Phúc'></option>
+				</datalist>	
+				</td>
+			</tr>
+			<tr>
+				<th align = center width = 150>Mật khẩu(*)</th>
+				<td width = 200><input type = 'text' placeholder = 'Mật khẩu' name = 'txtPaswword'></td>
+				</td>
+			</tr>
+			<tr>
+				<th align = center width = 150>Mật Khẩu mới(*)</th>
+				<td width = 200><input type = 'text' placeholder = 'Mật khẩu mới' name = 'txtNewPassword'></td>
+				</td>
+			</tr>
+			<tr>
+				<th align = center width = 150>Mã xác nhận</th>
+				<td width = 150><input type = 'text' name = 'txtCapcha'></td>
+			</tr>
+			<tr>
+				<td colspan = 2 align = center>
+				<input type = submit value = 'Đăng ký'>
+				</td>
+			</tr>
+			
+		</table>
+			<hr>
+			<tr>
+				<td align = left>Nếu bạn đã có tài khoản! Đăng nhập</td>
+			</tr>
+		
+		
+		</br>
+		
+		<!--button>Gửi</button>-->
+</form>		
+</body>
+</html>

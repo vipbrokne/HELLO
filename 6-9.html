@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bài học HTML </title>
+</head>
+<body>
+<marquee direction = left scrollamount = 10 scrolldelay = 100>
+	<a href = 'http://humg.edu.vn' target = '_blank'>Nội dung chạy</a>
+</marquee>
+<marquee direction = right>
+	<a href = 'http://humg.edu.vn' target = '_blank'><img src = 'http://webcoban.vn/image/cat-2.jpg' style="width:128px;height:128px;"></a>
+</marquee>
+<marquee direction = up>
+	<a href = 'http://humg.edu.vn' target = '_blank'><img src = '../4080153 - 7080118/images/oto.ipg'></a>
+</marquee>
+<marquee direction = down>
+	<a href = 'http://humg.edu.vn' target = '_blank'><img src = '../4080153 - 7080118/images/oto.ipg'></a>
+</marquee>
+<form method = get action = ''>
+		<table>
+			<caption><h1>Form đăng ký</h1></caption>
+			<tr>
+				<th align = right width = 150>Họ và Tên</th>
+				<td width = 200><input type = 'text' value1 = 'Nhập dữ liêu' placeholder = 'Nhập dữ liệu' name = 'txtFullName'required1></td>
+			</tr>
+			<tr>
+				<th align = right width = 150>Mã sinh viên</th>
+				<!--td width = 200><input type = 'text' value1 = 'Nhập dữ liêu' placeholder = 'Nhập dữ liệu' name = 'txtFullName'></td>
+				<td width =200><input type = number min = 1500000000 max = 9999999999 name ='txtStudentcode'>-->
+				<td width = 200>
+				<input type = number min = 1500000000 max = 9999999999 name = 'txtStudentcode' pattern = "[0-9]{2}[1-9]{1}[0-9]{2}[1-9]{1}[0-9]{4}">	
+				</td>
+			</tr>
+			<tr>
+				<th align = right width = 150>Lớp</th>
+				<td width = 200><input type = text maxlength = 11 name = 'txtClass'></td>
+			</tr>
+			<tr>
+				<th align = right width = 150>Giới tính</th>
+				<td width = 200>
+					<input type = radio name = 'rdGender' value = 'Nam' checked>Nam<br>
+					<input type = radio name = 'rdGender' value = 'Nữ'>Nữ<br>
+					<input type = radio name = 'rdGender' value = 'DTNam'>DTNam<br>
+					<input type = radio name = 'rdGender' value = 'DTNữ'>DTNữ<br>
+					<input type = radio name = 'rdGender' value = 'KB'>KB<br>
+			</tr>
+			<tr>
+				<th align = right>Số điện thoại</th>
+				<td>
+					<input type = tel name = 'telTelephone' pattern = " [0]{1}[1-9]{1}[0-9]{8}">
+				</td>
+			</tr>
+			<tr>
+				<th align = right width = 150>Ngày sinh</th>
+				<td width = 200><input type = 'date' name = 'dateDOB'></td>
+			</tr>
+			<tr>
+				<th align = right width = 150>Giờ sinh</th>
+				<td width = 200><input type = 'time' name = 'timeDOB'></td>
+			</tr>
+			<tr>
+				<th align = right width = 150>Ngày giờ đăng ký</th>
+				<td width = 200><input type = 'datetime-local' name = 'dtDTR'></td>
+			</tr>
+			<tr>
+				<th align = right width = 150>Địa chỉ</th>
+				<td width = 200><textarea name = 'txtAddress' cols = 50 rows = 4></textarea></td>
+			</tr>
+			<tr>
+				<th align = right width = 150>Quê quán</th>
+				<td width = 200>
+				<input type = 'text' list = 'Cities'  name = 'txtHomeTown'>
+				<datalist id = 'Cities'>
+					<option value = 'Hà Nôi'></option>
+					<option value = 'Hà Nam'></option>
+					<option value = 'Thái Nguyên'></option>
+					<option value = 'Thái Bình'></option>
+					<option value = 'Ninh Bình'></option>
+					<option value = 'Vĩnh Phúc'></option>
+				</datalist>	
+				</td>
+			</tr>
+			<tr>
+				<th align = right width = 150>Nơi đã di chuyển</th>
+				<td width = 200>
+				<select id = 'slRoute' multiple size = 10>
+					<option value = 'Cầu Giấy'>Cầu Giấy
+					<option value = 'Cầu Mỏ'>Cầu Mỏ
+					<option value = 'Cầu Noi'>Cầu Noi
+					<option value = 'Trần Đăng Ninh'>Trần Đăng Ninh
+					<option value = 'Nguyễn Đình Tứ'>Nguyễn Đình Tứ
+					<option value = 'Tân Xuân'>Tân Xuân
+				</select>	
+				</td>
+			</tr>
+			<tr>
+				<th align = right width = 150>Lương</th>
+				<td width = 200>
+				0 đ<input type = range name = 'rgSalary' step = 50000 min = 0 max = 20000000 value = 5000000>20,000,000 đ</td>
+			</tr>
+			<tr>
+				<th align = right width = 150>Sở thích</th>
+				<td width = 200>
+					<table>
+						<tr>
+							<td width = 150>
+							<input type = checkbox name = 'chkHobbies' value = 'Tiền'>Tiền</td>
+							<td width = 150>
+							<input type = checkbox name = 'chkHobbies' value = 'Ăn'>Ăn</td>
+							<td width = 150>
+							<input type = checkbox name = 'chkHobbies' value = 'Ngủ'>Ngủ</td>
+						</tr>
+						<tr>
+							<td width = 150>
+							<input type = checkbox name = 'chkHobbies' value = 'Xem Phim'>Xem Phim</td>
+							<td width = 150>
+							<input type = checkbox name = 'chkHobbies' value = 'Nghe nhạc'>Nghe nhạc</td>
+							<td width = 150>
+							<input type = checkbox name = 'chkHobbies' value = 'Game'>Game</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<th align = right width = 150>Mật khẩu</th>
+				<td width = 200>
+				<input type = password name = 'txtPassword'>
+				</td>
+			</tr>
+			<tr>
+				<th align = right width = 150>Nhập lại Mật khẩu</th>
+				<td width = 200>
+				<input type = password name = 'txtRePassword'>
+				</td>
+			</tr>
+			<tr>
+				<td colspan = 2 align = center>
+				<input type = submit value = 'Gửi'>
+				<input type = reset value="Nhập lại">
+				</td>
+			</tr>
+			
+		</table>	
+		
+		
+		</br>
+		
+		<!--button>Gửi</button>-->
+</form>		
+</body>
+</html>
